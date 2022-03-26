@@ -4,12 +4,7 @@ on:
   push:
       branches:
         - master
-      paths:
-        - 'hello-container/**'
 
-defaults:
-  run: 
-    working-directory: hello-container
 
 jobs: 
   build:
