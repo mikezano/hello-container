@@ -6,9 +6,9 @@ on:
         - master
 
 
-# defaults:
-#   run: 
-#     working-directory: ./
+defaults:
+  run: 
+    working-directory: ./hello-container
 
 
 jobs: 
@@ -17,6 +17,7 @@ jobs:
 
     steps: 
       - uses: actions/checkout@v2
+      - run: pwd
       - run: ls -a
       - run : aws s3 sync ./index.html s3://zan0/
         env: 
