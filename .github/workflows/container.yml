@@ -6,9 +6,9 @@ on:
         - master
 
 
-defaults:
-  run: 
-    working-directory: ./
+# defaults:
+#   run: 
+#     working-directory: ./
 
 
 jobs: 
