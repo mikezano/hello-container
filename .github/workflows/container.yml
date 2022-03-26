@@ -5,11 +5,11 @@ on:
       branches:
         - master
       paths:
-        - './**'
+        - 'hello-container/**'
 
 defaults:
   run: 
-    working-directory: ./
+    working-directory: hello-container
 
 jobs: 
   build:
